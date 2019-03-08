@@ -1,3 +1,6 @@
+<?php
+include "programacion.php";
+?>
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -11,6 +14,8 @@ and open the template in the editor.
     </head>
     <body>
         <?php
+        require "resultado.php";
+        
         $A=10;
         $a=10;
         $hello = "Hola mundo";
@@ -22,6 +27,18 @@ and open the template in the editor.
         echo "<br>";
         echo 'Saludo '.$hello. ' x ' .$A. ' y ' .$a;
         
+        /*Arreglos*/
+        $dia["Lunes"]= "1 clase";
+        $dia["Martes"]= "2 clase";
+        $dia["Miercoles"]= "1 clase";
+        $dia["Jueves"]= "4 clase";
+        $dia["Viernes"]= "1 clase";
+        
+        echo "<br>";
+        foreach ($dia as $value) {
+            echo $value . "<br>";
+        }
+
         ?>
     </body>
 </html>
